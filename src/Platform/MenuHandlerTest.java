@@ -10,14 +10,16 @@ import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import Wouu.*;
 /**
  * Klass för att testa MenuHandler-klassens metoder i spelPlatform
  * */
 class MenuHandlerTest {
+    //Mock input stream
     private ByteArrayInputStream testInput;
+    //Mock output stream
     private ByteArrayOutputStream expectedOutput = new ByteArrayOutputStream();
     private ByteArrayOutputStream testErrorOutput = new ByteArrayOutputStream();
+    //Faktisk input och output
     private final InputStream originalSystemIn = System.in;
     private final PrintStream originalSystemOut = System.out;
     private final PrintStream originalErrorOut = System.err;
@@ -37,14 +39,6 @@ class MenuHandlerTest {
         String[] mockArgs = {"",""};
 
         //Set test output
-//        String exInput = "quit";
-//        ByteArrayInputStream expectedInput = new ByteArrayInputStream(exInput.getBytes());
-//        System.setIn(expectedInput);
-//
-//        Game game = new Game();
-//        game.play();
-//        System.setOut(new PrintStream(expectedOutput));
-//        System.setIn(testInput);
         String includedMenu = "Welcome to the World of Uppsala University!";
 
         //Simulated input
@@ -60,7 +54,7 @@ class MenuHandlerTest {
             muHandler.RunMenu(mockArgs);
 
         } catch (NoSuchElementException e) {
-            //'quit' command fungera inte - spelet krascher
+            //'quit'-command fungera inte - spelet krascher istället
         }
 
         assertTrue(testOutput.toString().contains(includedMenu));
