@@ -4,8 +4,8 @@
         http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 <!--Testing pipeline-->
-    <groupId>lab.3</groupId>
-    <artifactId>SpelPlatform</artifactId>
+    <groupId>spel.platform</groupId>
+    <artifactId>user-interface</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>SpelPlatform</name>
     <dependencies>
