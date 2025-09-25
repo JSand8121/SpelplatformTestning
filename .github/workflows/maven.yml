@@ -43,7 +43,9 @@ jobs:
     needs: build_and_test
       
     steps:
-           - uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+           - uses: actions/checkout@v2
+             with:
+               token: ${{secrets.PAT}}
            - run: echo "Pushing to master..."
            - run: |
                 git checkout master
