@@ -43,7 +43,7 @@ jobs:
     needs: build_and_test
       
     steps:
-           - uses: GuillaumeFalourd/clone-github-repo-action@2.3
+           - uses: GuillaumeFalourd/clone-github-repo-action@v2.3
            - run: echo "Pushing to master..."
            - run: |
                 git checkout master
