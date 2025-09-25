@@ -60,12 +60,6 @@ class MenuHandlerTest {
 
     }
 
-    @Test
-    public void thisTestShouldFail(){
-        boolean stopBuild = false;
-
-        assertTrue(stopBuild);
-    }
 
     @AfterEach
     public void restoreOutputs(){
