@@ -1,4 +1,4 @@
-package Testing;
+package Test;
 
 import Platform.MenuHandler;
 import org.junit.jupiter.api.AfterEach;
