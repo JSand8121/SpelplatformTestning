@@ -16,7 +16,7 @@ public class Player {
     /**
     * Constructor
     * @param r - rules for the game
-    * @param palyerNr - which player in turn
+    * @param playerNr - which player in turn
     * @param divider - divider for the game
     */
     public Player(GameRules r, int playerNr, int divider){
