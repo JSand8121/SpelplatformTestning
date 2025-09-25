@@ -8,7 +8,6 @@
     <artifactId>SpelPlatform</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>SpelPlatform</name>
-
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
