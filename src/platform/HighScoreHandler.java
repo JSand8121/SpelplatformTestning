@@ -1,6 +1,4 @@
-package Platform;
-
-import java.sql.PreparedStatement;
+package platform;
 
 public class HighScoreHandler {
     public HighScoreHandler(){

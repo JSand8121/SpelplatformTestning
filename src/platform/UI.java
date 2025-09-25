@@ -1,4 +1,4 @@
-package Platform;
+package platform;
 
 /**
  * Användargransnitt till spelplatformen

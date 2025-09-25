@@ -1,4 +1,4 @@
-import Platform.MenuHandler;
+import platform.MenuHandler;
 
 public class Main {
     public static void main(String[] args) {
