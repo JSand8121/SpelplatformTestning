@@ -47,7 +47,5 @@ jobs:
              with:
                token: ${{secrets.PAT}}
                ref: master
-           - run: echo "Opening pull request to master..."
-           - run: |
-                gh pr create -B master -H dev --title ${{ github.event.head_commit.message }}
+           - run: echo "Pushing to master..."
                 
