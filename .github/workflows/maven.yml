@@ -46,7 +46,6 @@ jobs:
            - uses: actions/checkout@v2
              with:
                token: ${{secrets.PAT}}
-               ref: master
            - run: echo "Pushing to master..."
            - run: |
                git push origin dev:master
