@@ -49,5 +49,5 @@ jobs:
                ref: master
            - run: echo "Pushing to master..."
            - run: |
-               git push
+               git push origin dev:master
                 
