@@ -46,8 +46,8 @@ jobs:
            - uses: actions/checkout@v2
              with:
                token: ${{secrets.PAT}}
-               ref: ${{ github.events.pull_request.head.sha }}
+               ref: master
            - run: echo "Opening pull request to master..."
            - run: |
-                git push 
+                git pr create --base master --head dev --title ${{ github.event.head_commit.message }}
                 
