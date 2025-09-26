@@ -49,6 +49,6 @@ jobs:
            - run: echo "Pushing to master..."
            - run: |
                git config pull.rebase false
-               git pull origin master
+               git pull origin master --allow-unrelated-histories
                git push origin HEAD:master
                 
