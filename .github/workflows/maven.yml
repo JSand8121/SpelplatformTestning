@@ -43,9 +43,12 @@ jobs:
     needs: build_and_test
       
     steps:
-           - uses: GuillaumeFalourd/clone-github-repo-action@2.3
+           - uses: actions/checkout@v2
+             with:
+               token: ${{secrets.PAT}}
            - run: echo "Pushing to master..."
            - run: |
-                git checkout master
-                git merge feature/$(Build.SourceBranchName)
-                git push origin master
+               git config pull.rebase false
+               git pull origin master --allow-unrelated-histories
+               git push origin HEAD:master
+                
