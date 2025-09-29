@@ -1,7 +1,14 @@
 package platform;
 
 public class HighScoreHandler {
+
+    private String fileURL;
+
     public HighScoreHandler(){
+    }
+
+    public HighScoreHandler(String fileURL) {
+        this.fileURL = fileURL;
     }
 
     public String[] getHighScores(){
@@ -9,7 +16,7 @@ public class HighScoreHandler {
         throw new RuntimeException("Den här metoden måste vara implementerade");
     }
 
-    public boolean addNewScore(String newScore, String newName) {
+    public boolean addNewScore(Score newScore) {
         //Todo Skriva metoden
         return false;
     }
